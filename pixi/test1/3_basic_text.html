@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIXI TestSample</title>
+    <script src="../js/pixi.js"></script>
+</head>
+
+<style>
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gainsboro;
+    }
+</style>
+
+<body>
+    <script type=" text/javascript ">
+        let type = "WebGL "
+        if (!PIXI.utils.isWebGLSupported()) {
+            type = "canvas "
+        }
+
+        PIXI.utils.sayHello(type);
+        console.log(type);
+
+        //Create a Pixi Application
+        let app = new PIXI.Application({
+            width: window.innerWidth,
+            height: window.innerHeight,
+            antialias: true, // default: false
+            transparent: false, // default: false
+            autoResize: true,
+            resolution: 1 // default: 1
+        });
+
+        window.addEventListener("resize", function() {
+            app.renderer.resize(window.innerWidth, window.innerHeight);
+        });
+
+        // BackgroundColor
+        app.renderer.backgroundColor = 0xc9c9c9;
+
+        //app.renderer.autoResize = true;
+        //app.renderer.resize(256, 256);
+
+        app.renderer.resize(window.innerWidth, window.innerHeight);
+
+        let rectangle = new Graphics();
+        rectangle.lineStyle(4, 0xFF3300, 1);
+        rectangle.beginFill(0x66CCFF);
+        rectangle.drawRect(0, 0, 64, 64);
+        rectangle.endFill();
+        rectangle.x = 170;
+        rectangle.y = 170;
+        app.stage.addChild(rectangle);
+
+        //Add the canvas that Pixi automatically created for you to the HTML document
+        document.body.appendChild(app.view);
+    </script>
+</body>
+
+</html>
