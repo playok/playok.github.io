@@ -10,9 +10,18 @@
 </head>
 
 <style>
-    * {
+    html,
+    body {
+        margin: 0;
         padding: 0;
-        margin: 0
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gainsboro;
     }
 </style>
 
@@ -28,18 +37,23 @@
 
         //Create a Pixi Application
         let app = new PIXI.Application({
-            width: 256,
-            height: 256,
+            width: window.innerWidth,
+            height: window.innerHeight,
             antialias: true, // default: false
             transparent: false, // default: false
+            autoResize: true,
             resolution: 1 // default: 1
+        });
+
+        window.addEventListener("resize", function() {
+            app.renderer.resize(window.innerWidth, window.innerHeight);
         });
 
         // BackgroundColor
         app.renderer.backgroundColor = 0xff0000;
 
-        app.renderer.autoResize = true;
-        app.renderer.resize(256, 256);
+        //app.renderer.autoResize = true;
+        //app.renderer.resize(256, 256);
 
         app.renderer.resize(window.innerWidth, window.innerHeight);
 
