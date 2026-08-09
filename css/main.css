@@ -223,6 +223,65 @@ a:focus-visible, button:focus-visible {
   .score-board { grid-template-columns: 1fr 1.2fr; align-items: stretch; }
 }
 
+/* ---------- SELECT STAGE ---------- */
+
+.world { margin-bottom: 3rem; }
+.world-title { font-family: var(--pixel); font-size: 0.8rem; color: var(--text); margin: 0 0 1.25rem; }
+.world-no { color: var(--magenta); }
+
+.cards {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.card a {
+  display: block;
+  height: 100%;
+  padding: 1.25rem;
+  background: var(--bg-panel);
+  border: 3px solid var(--text-dim);
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 160ms, border-color 160ms, box-shadow 160ms;
+}
+.card a:hover, .card a:focus-visible {
+  transform: translateY(-6px);
+  border-color: var(--cyan);
+  box-shadow: 0 8px 0 rgba(0, 240, 255, 0.3);
+}
+
+.card-lang {
+  display: inline-block;
+  font-family: var(--pixel);
+  font-size: 0.45rem;
+  padding: 0.35rem 0.5rem;
+  border: 2px solid currentColor;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+}
+.card-lang[data-lang="Go"] { color: var(--cyan); }
+.card-lang[data-lang="Rust"] { color: var(--magenta); }
+.card-lang[data-lang="C"] { color: var(--yellow); }
+.card-lang[data-lang="JavaScript"] { color: var(--green); }
+
+.card-name {
+  display: block;
+  font-family: var(--pixel);
+  font-size: 0.7rem;
+  color: var(--cyan);
+  word-break: break-word;
+  margin-bottom: 0.6rem;
+}
+.card-desc { display: block; font-size: 0.9rem; color: var(--text-dim); }
+.star { display: inline-block; margin-top: 0.6rem; font-size: 0.8rem; color: var(--yellow); }
+
+@media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes bob { 50% { transform: translateY(10px); } }
 
