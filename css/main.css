@@ -282,6 +282,38 @@ a:focus-visible, button:focus-visible {
 @media (min-width: 640px) { .cards { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 960px) { .cards { grid-template-columns: repeat(3, 1fr); } }
 
+/* ---------- PLAYER ---------- */
+
+.player-bio { color: var(--text-dim); max-width: 60ch; }
+
+.player-info {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.6rem 1.5rem;
+  margin: 0 0 2rem;
+}
+.player-info dt { font-family: var(--pixel); font-size: 0.5rem; color: var(--magenta); align-self: center; }
+.player-info dd { margin: 0; }
+
+.links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
+.links a {
+  font-family: var(--pixel);
+  font-size: 0.65rem;
+  text-decoration: none;
+  padding: 0.9rem 1.25rem;
+  border: 3px solid var(--cyan);
+}
+.links a:hover, .links a:focus-visible { background: var(--cyan); color: var(--bg); }
+
+.foot {
+  text-align: center;
+  padding: 3rem 1.25rem 4rem;
+  font-family: var(--pixel);
+  font-size: 0.55rem;
+  color: var(--text-dim);
+}
+.foot-c { color: var(--magenta); }
+
 @keyframes blink { 50% { opacity: 0; } }
 @keyframes bob { 50% { transform: translateY(10px); } }
 
