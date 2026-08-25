@@ -1,5 +1,5 @@
 {
-  "active_days": 989,
+  "active_days": 990,
   "best_day": 117,
   "best_day_date": "2026-08-18",
   "by_year": {
@@ -19,14 +19,14 @@
     "2023": 559,
     "2024": 573,
     "2025": 398,
-    "2026": 3410
+    "2026": 3432
   },
-  "current_combo": 29,
-  "max_combo": 29,
-  "total": 6025,
-  "updated": "2026-08-24",
+  "current_combo": 30,
+  "max_combo": 30,
+  "total": 6047,
+  "updated": "2026-08-25",
   "year": 2026,
-  "year_active_days": 192,
-  "year_days_elapsed": 236,
-  "year_total": 3410
+  "year_active_days": 193,
+  "year_days_elapsed": 237,
+  "year_total": 3432
 }
