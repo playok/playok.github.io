@@ -129,7 +129,8 @@ var REPOS = [
     { n: 'gitNotepad', l: 'JavaScript', d: 'git을 저장소로 쓰는 웹 메모장', star: 3 },
     { n: 'ParquetDuckQuery', l: 'HTML', d: 'DuckDB JDBC로 Parquet을 조회하는 도구' },
     { n: 'packetDup', l: 'HTML', d: '트래픽을 복제해 흘려보내는 패킷 프록시' },
-    { n: 'kr-supercharger-timeline', l: 'HTML', d: '국내 슈퍼차저 설치 이력 타임라인' }
+    { n: 'kr-supercharger-timeline', l: 'HTML', d: '국내 슈퍼차저 설치 이력 타임라인' },
+    { n: 'laftel-timer', l: 'JavaScript', d: '라프텔 재생 시간을 오버레이와 OBS 팝업으로 보여주는 북마클릿' }
   ]},
   { world: 'WORLD 4', title: 'AI & SIGNAL', items: [
     { n: 'mcp-glm-go', l: 'Go', d: 'Z.AI GLM 모델을 연결하는 MCP 서버' },
