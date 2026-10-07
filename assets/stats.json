@@ -18,15 +18,15 @@
     "2022": 649,
     "2023": 620,
     "2024": 636,
-    "2025": 433,
-    "2026": 4725
+    "2025": 450,
+    "2026": 4740
   },
   "current_combo": 9,
   "max_combo": 38,
-  "total": 7499,
-  "updated": "2026-10-06",
+  "total": 7531,
+  "updated": "2026-10-07",
   "year": 2026,
   "year_active_days": 235,
-  "year_days_elapsed": 279,
-  "year_total": 4725
+  "year_days_elapsed": 280,
+  "year_total": 4740
 }
