@@ -21,12 +21,12 @@
     "2025": 450,
     "2026": 5771
   },
-  "current_combo": 2,
+  "current_combo": 0,
   "max_combo": 38,
   "total": 8562,
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "year": 2026,
   "year_active_days": 273,
-  "year_days_elapsed": 322,
+  "year_days_elapsed": 323,
   "year_total": 5771
 }
